@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.mohapi_parollmanagement_system.Employee"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <!-- Title for the employee form -->
+    <Label text="Employee Management" layoutX="230.0" layoutY="20.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <!-- Name Field -->
+    <Label text="Name:" layoutX="50.0" layoutY="70.0"/>
+    <TextField fx:id="nameField" layoutX="150.0" layoutY="70.0" prefWidth="200.0"/>
+
+    <!-- Position Field -->
+    <Label text="Position:" layoutX="50.0" layoutY="120.0"/>
+    <TextField fx:id="positionField" layoutX="150.0" layoutY="120.0" prefWidth="200.0"/>
+
+    <!-- Department Field -->
+    <Label text="Department:" layoutX="50.0" layoutY="170.0"/>
+    <TextField fx:id="departmentField" layoutX="150.0" layoutY="170.0" prefWidth="200.0"/>
+
+    <!-- Basic Salary Field -->
+    <Label text="Basic Salary:" layoutX="50.0" layoutY="220.0"/>
+    <TextField fx:id="basicSalaryField" layoutX="150.0" layoutY="220.0" prefWidth="200.0"/>
+
+    <!-- Add Employee Button -->
+    <Button fx:id="addEmployeeButton" text="Add Employee" layoutX="150.0" layoutY="270.0" onAction="#handleAddEmployee"/>
+
+    <!-- Displaying Success/Error Message -->
+    <Label fx:id="messageLabel" layoutX="150.0" layoutY="320.0" style="-fx-text-fill: green; -fx-font-weight: bold;"/>
+
+</AnchorPane>

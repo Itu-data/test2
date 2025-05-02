@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.mohapi_parollmanagement_system.LoginController">
+    <children>
+        <VBox alignment="CENTER" spacing="10.0" prefWidth="300"
+              AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+              AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+            <Label text="Payroll Management System" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+            <VBox alignment="CENTER_LEFT" spacing="5.0"
+                  style="-fx-padding: 10px; -fx-background-color: white; -fx-background-radius: 5px;">
+                <Label text="Username:"/>
+                <TextField fx:id="usernameField" promptText="Enter username" style="-fx-pref-width: 250px;"/>
+                <Label text="Password:"/>
+                <PasswordField fx:id="passwordField" promptText="Enter password" style="-fx-pref-width: 250px;"/>
+                <Label text="Role:"/>
+                <ComboBox fx:id="roleComboBox" promptText="Select Role" style="-fx-pref-width: 250px;"/>
+                <Button text="Login" onAction="#handleLogin" style="-fx-pref-width: 250px; -fx-background-color: #2196F3; -fx-text-fill: white;"/>
+                <Button text="Create Account" onAction="#goToSignUp" style="-fx-pref-width: 250px; -fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+            </VBox>
+        </VBox>
+    </children>
+</AnchorPane>

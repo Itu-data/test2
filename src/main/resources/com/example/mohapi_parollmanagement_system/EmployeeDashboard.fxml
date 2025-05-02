@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/fxml/1"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.mohapi_parollmanagement_system.EmployeeDashboardController">
+
+    <VBox spacing="20" alignment="CENTER"
+          AnchorPane.topAnchor="20" AnchorPane.bottomAnchor="20"
+          AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+
+        <Label text="Employee Dashboard" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+        <Button text="My Profile"
+                style="-fx-pref-width: 250px; -fx-padding: 10px;"
+                onAction="#handleViewProfile"/>
+
+        <Button text="Submit Request"
+                style="-fx-pref-width: 250px; -fx-padding: 10px;"
+                onAction="#handleSubmitRequest"/>
+
+        <Button text="View Payslips"
+                style="-fx-pref-width: 250px; -fx-padding: 10px;"
+                onAction="#handleViewPayslips"/>
+
+        <Button text="Logout"
+                style="-fx-pref-width: 250px; -fx-padding: 10px; -fx-background-color: #ff4444; -fx-text-fill: white;"
+                onAction="#handleLogout"/>
+    </VBox>
+</AnchorPane>
